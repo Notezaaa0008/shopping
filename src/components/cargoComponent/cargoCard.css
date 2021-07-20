@@ -1,0 +1,31 @@
+.cargo-card-container {
+    box-shadow: 4px 8px 8px silver;
+    width: 300px;
+    border-radius: 5px;
+    margin: 30px;
+    background-color:skyblue;
+    color: white;
+    
+}
+
+img{
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+}
+
+.cargo-card-name{
+    padding: 2px 16px;
+    text-align: center;
+}
+
+.cargo-card-count {
+    margin: 10px;
+    padding: 2px 16px;
+    text-align: center;
+}
+
+.cargo-card-add {
+    margin: 10px;
+    padding: 10px 16px;
+    text-align: center;
+}

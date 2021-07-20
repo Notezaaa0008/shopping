@@ -1,0 +1,19 @@
+.dropdown-box{
+    margin: 0px 15px;
+}
+
+.ul-dropdown{
+    list-style-type: none;
+    position: absolute;
+    left: 250px;
+    z-index: 1;
+    height: 500px;
+}
+  
+.ul-dropdown li a{
+    color: black;
+    padding: 0px 30px;
+    text-decoration: none;
+    border: 1px solid black;
+    background-color: gainsboro;
+}

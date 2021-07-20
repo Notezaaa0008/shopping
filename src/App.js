@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import { useState } from 'react'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import CargoContainer from './container/cargoContainer/cargoContainer'
+import NavbarContainer from './container/navbar/navbarContainer'
 
 function App() {
+  const [data, setData] = useState([
+    { product : 'Apple', img : 'http://picsum.photos/250'},
+    { product : 'Mango', img : 'http://picsum.photos/245' },
+    { product : 'Orange', img : 'http://picsum.photos/250' },
+    { product : 'Papaya', img : 'http://picsum.photos/245' },
+    { product : 'Melon', img : 'http://picsum.photos/250' },
+    { product : 'Grape', img : 'http://picsum.photos/245' }, 
+])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavbarContainer />
+      <CargoContainer data = {data}/>
+      {/* <BrowserRouter>
+        <Switch>
+
+        </Switch>
+      </BrowserRouter> */}
     </div>
   );
 }
